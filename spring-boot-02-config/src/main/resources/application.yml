@@ -1,0 +1,20 @@
+server:
+  port: 8081
+spring:
+  http:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+debug: true
+---
+server:
+  port: 8086
+
+spring:
+  profiles: dev
+---
+server:
+  port: 8083
+spring:
+  profiles: prod
