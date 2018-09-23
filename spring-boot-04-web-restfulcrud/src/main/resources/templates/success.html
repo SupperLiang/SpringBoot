@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--
+    User: LiangYong
+    Date: 2018/9/16
+    Time: 14:04
+-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Success</h1>
+<div th:text="${value1}"></div>
+<div th:utext="${value2}"></div>
+<ul th:each="v:${value3}">
+    <li th:text="${v}"></li>
+</ul>
+</body>
+</html>
