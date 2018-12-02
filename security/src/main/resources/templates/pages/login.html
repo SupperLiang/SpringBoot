@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+</head>
+<body>
+<h1 align="center">欢迎登陆武林秘籍管理系统</h1>
+<hr>
+<div align="center">
+    <form method="post" th:action="@{/userlogin}">
+        用户名:<label>
+        <input name="user"/>
+    </label><br>
+        密码:<label>
+        <input name="pwd">
+    </label><br/>
+        <input type="submit" value="登陆">
+        <label>
+            <input name="remeber" type="checkbox">
+        </label>记住我
+    </form>
+</div>
+</body>
+</html>
